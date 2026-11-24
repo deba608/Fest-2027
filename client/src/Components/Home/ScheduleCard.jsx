@@ -18,15 +18,15 @@ const ScheduleCard = ({ day, date }) => {
   };
 
   return (
-    <div className={`w-36 h-32 md:w-[236px] md:h-[201px] font-moon ${rotate5} ${rotate6} ${rotate7} ${rotate4}`}>
+    <div className={`w-40 h-36 md:w-[236px] md:h-[201px] font-moon ${rotate5} ${rotate6} ${rotate7} ${rotate4}`}>
       <div className="h-[80%] md:h-[78%] font-bold px-3 py-1 md:px-5 md:py-3 leading-[38px] md:leading-[59px] relative bg-floralWhite">
         <div className="absolute font-moon bg-zinc-900 md:w-[80px] mb-2 w-[50px] h-7 md:h-9 bottom-3 right-3 rounded-[6px] flex items-center justify-center">
           <p className="tracking-wide text-[0.6rem] md:text-[1rem] text-white">DAY {day}</p>
         </div>
-        <h1 className={`mt-1 text-[40px] md:text-[55px] tracking-wide mb-1 md:leading-[3.8rem] ${textColor}`}>
+        <h1 className={`mt-1 text-[32px] md:text-[55px] tracking-wide mb-1 md:leading-[3.8rem] ${textColor}`}>
           NOV
         </h1>
-        <h1 className={`mt-2 text-[40px] md:text-[55px] tracking-wide ${textColor}`}>
+        <h1 className={`mt-2 text-[32px] md:text-[55px] tracking-wide ${textColor}`}>
           {date}
         </h1>
       </div>

@@ -4,7 +4,7 @@ import MainEvent from "@/Components/Culrav/MainEventCard";
 import roller from "@/images/disk.png"; // Assuming roller image is imported
 import cardBg from "@/images/image.png";
 import culravData from "@/data/Event/culrav/events/culravData.js";
-import culravImage from "@/assets/Home/culrav.webp";
+import culravImage from "@/assets/Home/aavahan.webp";
 
 function AavahanLanding() {
 
@@ -61,7 +61,7 @@ function AavahanLanding() {
         </div>
       </div>
 
-      <div className="w-full h-full items-center justify-center flex flex-col mt-[10%] sm:-mt-[20vh]">
+      <div className="w-full h-full items-center justify-center flex flex-col mt-[3%] sm:-mt-[20vh]">
         <h1
           className="bg-[#F54E25] md:mb-0 mb-5 font-bionix text-[#FFFAF0] font-bold text-center  "
           style={{

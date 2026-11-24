@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
           backgroundPosition: "center",
         }}
       >
-        <nav className="flex flex-col justify-center gap-12 items-center h-full relative text-4xl font-bebas text-navlink">
+        <nav className="flex flex-col justify-center gap-8 items-center h-full relative text-2xl font-bebas text-navlink">
           <ul className="flex flex-col items-center justify-center gap-1">
             <li className="py-2 px-4 hover:text-register transition-all duration-300 ease-in-out">
               <a href="/aavahan-landing">AAVAHAN</a>

@@ -84,7 +84,7 @@ const Sponsors = () => {
 
       <div className="relative z-10 flex flex-col items-center py-20">
         {/* Main Title */}
-        <h1 className="text-white font-[Bionix] text-5xl sm:text-6xl md:text-7xl font-extrabold text-center mb-12">
+        <h1 className="text-white font-[Bionix] text-3xl sm:text-6xl md:text-7xl font-extrabold text-center mb-12">
           SPONSORS
         </h1>
 
@@ -106,7 +106,7 @@ const Sponsors = () => {
                 <img
                   src={section.logo}
                   alt={`${section.title} Logo`}
-                  className="w-3/4 h-auto scale-150 object-contain"
+                  className="w-3/4 h-auto scale-100 sm:scale-150 object-contain"
                 />
               </div>
             </div>

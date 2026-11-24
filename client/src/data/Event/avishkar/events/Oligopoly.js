@@ -1,10 +1,9 @@
-import OligopolyPic from "../images/Main/OLIGOPOLY.webp";
 import OligopolySubPic from "../images/Sub/Oligopoly.webp";
 
 const Oligopoly = {
   eventName: "Oligopoly",
   tagline: "",
-  BGImageLink: OligopolyPic,
+  BGImageLink: OligopolySubPic,
   instagramLink: "",
   events: [
     {

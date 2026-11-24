@@ -1,24 +1,27 @@
-import CyberQuest from "./CyberQuest";
-import Electromania from "./Electromaina";
-import Genesis from "./Genesis";
-import Mechrocosm from "./Mechrocosm";
-import Monopoly from "./Monopoly";
-import Nirmaan from "./Nirmaan";
-import Oligopoly from "./Oligopoly";
-import PowerSurge from "./PowerSurge";
-import Rasayans from "./Rasayans";
-import Kreedomania from "./Kreedomania";
+import CompetitiveProgramming from "./CompetitiveProgramming";
+import Hackvere3 from "./Hackvere3";
+import Gamedev from "./Gamedev";
+import Ideanest from "./Ideanest";
+import EditAReel from "./EditAReel";
+import GraphicDesign from "./GraphicDesign";
+import Techexpo from "./Techexpo";
+import RoboSoccer from "./RoboSoccer";
+import RoboRace from "./RoboRace";
+import MouseMaze from "./MouseMaze";
+import LineFollower from "./LineFollower";
+
 const AvishkarAllEvents = [
-  { id: 1, ...CyberQuest },
-  { id: 2, ...Electromania },
-  { id: 3, ...Genesis },
-  { id: 4, ...Mechrocosm },
-  { id: 5, ...Monopoly },
-  { id: 6, ...Nirmaan },
-  { id: 7, ...Oligopoly },
-  { id: 8, ...PowerSurge },
-  { id: 9, ...Rasayans },
-  { id: 10, ...Kreedomania },
+  { id: 11, ...CompetitiveProgramming },
+  { id: 12, ...Hackvere3 },
+  { id: 13, ...Gamedev },
+  { id: 14, ...Ideanest },
+  { id: 15, ...EditAReel },
+  { id: 16, ...GraphicDesign },
+  { id: 17, ...Techexpo },
+  { id: 18, ...RoboSoccer },
+  { id: 19, ...RoboRace },
+  { id: 20, ...MouseMaze },
+  { id: 21, ...LineFollower },
 ];
 
 export default AvishkarAllEvents;

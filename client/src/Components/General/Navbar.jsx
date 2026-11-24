@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
 import useAuth from "@/lib/useAuth";
 import { Toaster } from "react-hot-toast";
-import logo from "../../assets/general/logo.webp";
+import logo from "../../assets/general/logoo.png";
 import { useSelector } from "react-redux";
 
 function Navbar() {
@@ -92,11 +92,11 @@ function Navbar() {
       </div>
 
       {/* Render for mobile screens */}
-      <div className=" w-[100vw] -top-[15px] absolute bg-scheduleLargeText flex items-center justify-end z-50 md:hidden">
+      <div className="w-full fixed top-0 left-0 bg-scheduleLargeText flex items-center justify-between px-4 py-3 z-50 md:hidden">
         <div className="z-30">
           <img
             src={logo}
-            className="logo absolute left-4 logo hover:cursor-pointer w-auto h-28 "
+            className="logo hover:cursor-pointer w-auto h-14 left-4 top-0 object-contain bg-transparent"
             onClick={handleLogoClick}
           ></img>
         </div>

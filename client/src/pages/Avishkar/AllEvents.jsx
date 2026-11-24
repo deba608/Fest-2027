@@ -45,6 +45,7 @@ import AvishkarAllEvents from "@/data/Event/avishkar/events/AvishkarAllEvents";
 import aviskharbg from "@/images/aviskar-bg.png";
 import hoverimage from "@/images/hoveraviskhar.png";
 import cardBg from "@/images/imageavishkar.png";
+import roller from "@/images/disk.png";
 import MainEventCard from "@/Components/Avishkar/MainEventCard";
 import { useParams } from "react-router-dom";
 
@@ -55,7 +56,7 @@ function AvishkarEvents() {
 
   return (
     <div
-      className="hover:cursor-pointer flex flex-col relative z-20 items-center justify-center min-h-screen w-full bg-[#181818] px-4 sm:px-6 lg:px-8 pt-[30%] sm:pt-[20%] md:pt-[15%] lg:pt-[10%]"
+      className="hover:cursor-pointer flex flex-col relative z-20 items-center justify-center min-h-screen w-full bg-[#181818] px-4 sm:px-6 lg:px-8 pt-[10%] sm:pt-[20%] md:pt-[15%] lg:pt-[10%]"
       style={{ backgroundImage: `url(${aviskharbg})` }}
     >
       <h1
@@ -74,8 +75,7 @@ function AvishkarEvents() {
             key={index}
             className="relative group flex flex-col items-center w-[90%] h-[280px] sm:h-[300px] md:h-[350px] lg:h-[380px] lg:w-[380px]  p-[5%]  overflow-hidden "
           >
-            <MainEventCard
-            Card id={id} event={event} />
+            <MainEventCard roller={roller} id={id} event={event} />
           </div>
         ))}
       </div>

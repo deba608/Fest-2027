@@ -1,11 +1,10 @@
-import PowersurgePic from "../images/Main/POWERSURGE.webp";
-import PowersurgeSubPic from "../images/Sub/PowerSurge.webp";
+import PowerSurgeSubPic from "../images/Sub/PowerSurge.webp";
 
 const PowerSurge = {
   eventName: "PowerSurge",
   tagline: "Ignite the Spark of Innovation",
-  BGImageLink: PowersurgePic, // Add background image link here
-  instagramLink: "https://www.instagram.com/powersurge/", // Placeholder for Instagram link
+  BGImageLink: PowerSurgeSubPic,
+  instagramLink: "https://www.instagram.com/powersurge/",
   events: [
     {
       eventName: "Pentathalon",
@@ -21,7 +20,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 5,
       minTeamSize: 3,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Priyadarshiny Pandey", contact: "9854063793" },
@@ -48,7 +47,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 1,
       minTeamSize: 1,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Sahil Verma", contact: "8789344935" },
@@ -70,7 +69,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 4,
       minTeamSize: 1,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Shivam Kumar", contact: "7017903175" },
@@ -92,7 +91,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 5,
       minTeamSize: 3,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Md Faizan, ", contact: "8210132648" },
@@ -113,7 +112,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 1,
       minTeamSize: 1,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Arihant Singh", contact: "8690585406" },
@@ -131,7 +130,7 @@ const PowerSurge = {
       ],
       maxTeamSize: 3,
       minTeamSize: 3,
-      BGImageLink: PowersurgeSubPic, // Add background image link here
+      BGImageLink: PowerSurgeSubPic,
       PsLink: "",
       coordinators: [
         { name: "Arpita Shrivastava", contact: "9302816168" },

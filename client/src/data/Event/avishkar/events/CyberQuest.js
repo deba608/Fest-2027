@@ -1,11 +1,10 @@
 // you have to import bg image
-import CyberquestPic from "../images/Main/CYBERQUEST.webp";
 import CyberSubPic from "../images/Sub/Cyberquest.webp";
 
 const CyberQuest = {
   eventName: "CyberQuest",
   tagline: "",
-  BGImageLink: CyberquestPic,
+  BGImageLink: CyberSubPic,
   instagramLink: "",
   events: [
     {

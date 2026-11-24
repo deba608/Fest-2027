@@ -1,6 +1,6 @@
 // import bg
 
-import GenesisPic from "../images/Main/Genesis.webp";
+import GenesisPic from "../images/Sub/Genesis.webp";
 import GenesisSubPic from "../images/Sub/Genesis.webp";
 
 const Genesis = {

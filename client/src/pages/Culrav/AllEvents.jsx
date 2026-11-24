@@ -16,7 +16,7 @@ function CulravEvents() {
   
 
   return (
-    <div className=" culrav-background relative z-20 flex flex-col items-center justify-center bg-floralWhite pt-[20%] sm:pt-[10%] md:pt-[10%] lg:pt-[8%] p-[8%]  bg-center bg-cover">
+    <div className=" culrav-background relative z-20 flex flex-col items-center justify-center bg-floralWhite pt-[10%] sm:pt-[10%] md:pt-[10%] lg:pt-[8%] p-[8%]  bg-center bg-cover">
       <h1
         className="bg-[#F54E25] md:mb-0 mb-10 font-bionix text-[#FFFAF0] font-bold text-center  "
         style={{

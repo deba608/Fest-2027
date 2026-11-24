@@ -144,13 +144,12 @@ function CulravEvent() {
 
         {/* Layer Background Wrapper for RANGSAAZI and Description */}
         <div
-          className="relative w-full mt-10 flex flex-col items-center justify-center text-center m-auto "
+          className="relative w-full mt-10 pt-20 md:mt-10 flex flex-col items-center justify-center text-center m-auto p-4 md:p-[4rem] md:pt-[4rem] "
           style={{
             backgroundImage: `url(${layer1})`,
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center ",
-            padding: "4rem",
           }}
         >
           {/* RANGSAAZI Section */}
@@ -165,18 +164,18 @@ function CulravEvent() {
               margin: "0 auto",
             }}
           >
-            <span className="font-bionix text-[3.5vw] sm:text-[3vw] pl-[6%]">
+            <span className="font-bionix text-[5vw] sm:text-[3vw] pl-[6%]">
               {eventData.eventName}
             </span>
           </div>
 
           {/* Description Section */}
           <section className="relative items-center text-center pb-10 pl-[4vw] sm:pb-0 w-full ">
-            <h2 className="text-[#F54E25] font-bionix text-[3vw] sm:text-[2.5vw] uppercase mb-1">
+            <h2 className="text-[#F54E25] font-bionix text-base sm:text-[2.5vw] uppercase mb-1">
               Description
             </h2>
             <p
-              className="text-[2.5vw] sm:text-[2vw] p-[0.8vw] text-[#181818] font-bebas"
+              className="text-base sm:text-[2vw] p-[0.8vw] text-[#181818] font-bebas"
               style={{ wordSpacing: "0.2em" }}
             >
               {eventData.description}
@@ -185,15 +184,15 @@ function CulravEvent() {
         </div>
 
         {/* Rules Section */}
-        <section className="pl-[18vw] -mt-[10vh] sm:mt-0 z-10">
-          <h2 className="text-[#F54E25] font-bionix text-[3vw] sm:text-[2.5vw] pr-[15vw] uppercase text-center ">
+        <section className="pl-4 sm:pl-[18vw] -mt-0 z-10">
+          <h2 className="text-[#F54E25] font-bionix text-base sm:text-[2.5vw] pr-0 sm:pr-[15vw] uppercase text-center ">
             Rules
           </h2>
           <ul className="w-full mx-[5%] text-[#181818] font-bebas space-y-4 pr-[10%] items-start justify-center flex flex-col">
             {eventData.rules.map((rule, index) => (
               <li
                 key={index}
-                className="flex items-start w-[85%] text-[2.5vw] sm:text-[2vw] mt-[1.5%]"
+                className="flex items-start w-[85%] text-base sm:text-[2vw] mt-[1.5%]"
                 style={{ wordSpacing: "0.15em" }}
               >
                 <div
@@ -214,7 +213,7 @@ function CulravEvent() {
         <div className="flex justify-center py-6 pl-[5vw]">
           <button
             onClick={handleModelOpen}
-            className="bg-[#F54E25] text-[2.5vw] font-bionix hover:bg-orange-600 text-[#FFFAF0] font-bold py-2 px-6"
+            className="bg-[#F54E25] text-lg sm:text-[2.5vw] font-bionix hover:bg-orange-600 text-[#FFFAF0] font-bold py-3 sm:py-2 px-6"
           >
             Register
           </button>
@@ -240,10 +239,10 @@ function CulravEvent() {
 
           {/* Content overlay */}
           <div className="relative z-10">
-            <h2 className="uppercase text-[3vw] text-[#F54E25] font-bold mb-4 mt-[5%]">
+            <h2 className="uppercase text-base sm:text-[3vw] text-[#F54E25] font-bold mb-4 mt-[5%]">
               Coordinators
             </h2>
-            <div className="flex justify-around font-bold text-[#FFFAF0] text-[2.5vw] pb-4">
+            <div className="flex justify-around font-bold text-[#FFFAF0] text-base sm:text-[2.5vw] pb-4">
               {eventData.eventCoordinators.map((coo, idx) => (
                 <div key={idx}>{coo.name}</div>
               ))}

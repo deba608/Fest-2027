@@ -13,9 +13,13 @@ function TeamProfile() {
               </div>
             </div>
             <div className="w-full h-full flex flex-col items-center md:flex-row md:flex-wrap  gap-[2%]  lg:gap-[7%] mb-[20%] sm:mb-[10%]">
-              {team.members.map((profile) => {
+              {team.members.map((profile, index) => {
                 return (
-                  <div className="w-[250px] h-[250px] mb-10 flex justify-center items-center">
+                  <div
+                    key={`${team.teamName}-${index}`}
+                    className="got-rise w-[250px] h-[250px] mb-10 flex justify-center items-center"
+                    style={{ animationDelay: `${index * 90}ms` }}
+                  >
                     <PersonCard profile={profile} />
                   </div>
                 );

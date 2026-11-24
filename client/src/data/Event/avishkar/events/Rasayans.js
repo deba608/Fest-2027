@@ -1,10 +1,9 @@
-import RasayanMainPic from "../images/Main/Rasayans.webp";
 import RasayanPic from "../images/Sub/Rasayans.webp";
 
 const Rasayans = {
   eventName: "Rasayans",
   tagline: "Chemistry Unleashed",
-  BGImageLink: RasayanMainPic,
+  BGImageLink: RasayanPic,
   instagramLink: "", // Add Instagram link if available
   events: [
     {

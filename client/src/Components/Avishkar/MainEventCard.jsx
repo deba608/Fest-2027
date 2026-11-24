@@ -8,7 +8,7 @@ function MainEventCard({ roller,id, event }) {
    
   };
   return (
-    <div className="relative w-full h-full  flex flex-col justify-between overflow-hidden transition-transform duration-500 ease-out  ">
+    <div className="relative w-full h-full  flex flex-col justify-between overflow-hidden transition-transform duration-500 ease-out  group">
       {/* Roller Image (transition effect) */}
       <div className="absolute left-0 w-full h-full">
         <div
@@ -30,12 +30,12 @@ function MainEventCard({ roller,id, event }) {
           className="w-full h-full object-fill"
         />
       </div>
-      <div className="hover:cursor-pointer absolute z-30 bottom-0 w-full px-2 flex justify-center items-center h-[30%]">
-        <div className="absolute hover:z-30 bottom-0 left-0 w-full px-2 z-20 flex justify-center h-[70px] ">
+      <div className="absolute z-20 bottom-0 w-full px-2 flex justify-center items-center h-[30%]">
+        <div className="absolute bottom-0 left-0 w-full px-2 z-20 flex justify-center">
           {" "}
           {/* Added flex justify-center */}
           {/* Sliding White Background */}
-          <div className={`absolute inset-0 bg-[#181818] ${location.pathname.includes("/AvishkarEvents") ? "border-2 border-t-0 border-white" : "border-none"} transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500`}></div>
+          <div className="absolute inset-0 bg-[#181818] transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500"></div>
 
           {/* Sliding Explore Text */}
           <span
@@ -46,7 +46,7 @@ function MainEventCard({ roller,id, event }) {
             }}
           >
             <span
-  className="hover:lg:cursor-pointer hover:text-[#F54E25] group-hover:text-[2rem] transition-all duration-300"
+  className="hover:text-[#F54E25] hover:cursor-pointer group-hover:text-[2.5rem] transition-all duration-300"
   onClick={handleClick}
 >
   {" "}
@@ -55,9 +55,9 @@ function MainEventCard({ roller,id, event }) {
 
           </span>
         </div>
-        <div className="absolute  group-hover:hidden bottom-0 left-0 w-full px-2 z-20 hover:z-0 flex items-center justify-center">
+        <div className="absolute group-hover:hidden bottom-0 left-0 w-full px-2 z-20 hover:z-0 flex items-center justify-center">
           <span
-            className=" bottom-0 text-black w-auto max-w-[85%] flex text-center text-[15px] pt-8 xl:text-[18px] -mt-16 font-bionix hover:z-0 "
+            className=" bottom-0 text-black w-auto max-w-[90%] flex text-center text-[15px] pt-8 xl:text-[18px] -mt-16 font-bionix hover:z-0 "
           >
             {event.eventName}
           </span>

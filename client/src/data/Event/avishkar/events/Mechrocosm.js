@@ -1,10 +1,9 @@
-import MechrocosmPic from "../images/Main/MECHROCOSM.webp";
 import MechrocosmSubPic from "../images/Sub/Mechrocosm.webp";
 
 const Mechrocosm = {
   eventName: "Mechrocosm",
   tagline: "",
-  BGImageLink: MechrocosmPic,
+  BGImageLink: MechrocosmSubPic,
   instagramLink: "",
   events: [
     {

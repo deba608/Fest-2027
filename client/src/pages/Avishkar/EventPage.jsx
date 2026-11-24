@@ -149,7 +149,7 @@ function AvishkarEvent() {
             margin: "0 auto",
           }}
         >
-          <span className="font-bionix text-[3vw] pl-[6%]">
+          <span className="font-bionix text-[5vw] sm:text-[3vw] pl-[6%]">
             {eventData?.eventName}
           </span>
         </div>
@@ -158,27 +158,28 @@ function AvishkarEvent() {
         <div className="flex-grow pl-[7%] mr-[5%]">
           {/* Description Section */}
           <section className="flex flex-col items-center text-center">
-            <h2 className="text-[#F54E25] font-bionix text-[2.5vw] uppercase ">
+            <h2 className="text-[#F54E25] font-bionix text-lg md:text-[2.5vw] uppercase ">
               Description
             </h2>
             <p
-              className="w-full text-[2.5vw] font-bebas pl-[10%] pr-[10%]"
+              className="w-full text-base md:text-[2.5vw] font-bebas pl-[10%] pr-[10%] leading-relaxed"
               style={{ wordSpacing: "0.2em" }}
             >
               {eventData?.description}
             </p>
+            <div className="mb-8"></div>
           </section>
 
           {/* Rules Section */}
           <section className="px-4 py-6 pl-[10vw]">
-            <h2 className="text-[#F54E25] font-bionix text-[2.5vw] pr-[9vw] uppercase text-center mb-2">
+            <h2 className="text-[#F54E25] font-bionix text-lg md:text-[2.5vw] pr-[9vw] uppercase text-center mb-2">
               Rules
             </h2>
-            <ul className="w-full mx-[5%] font-bebas space-y-4 items-start justify-center flex flex-col">
+            <ul className="w-full mx-[5%] font-bebas space-y-4 items-start justify-center flex flex-col leading-relaxed">
               {eventData?.rules.map((rule, index) => (
                 <li
                   key={index}
-                  className="flex items-start text-[2.5vw] mr-[10%]"
+                  className="flex items-start text-base md:text-[2.5vw] mr-[10%] leading-relaxed"
                   style={{ wordSpacing: "0.2em" }}
                 >
                   <div
@@ -199,7 +200,7 @@ function AvishkarEvent() {
           <div className="flex justify-center py-6 pl-[5vw]">
             <button
               onClick={handleModelOpen}
-              className="bg-[#F54E25] text-[2.5vw] font-bionix hover:bg-orange-600 text-[#FFFAF0] font-bold py-2 px-6"
+              className="bg-[#F54E25] text-lg md:text-[2.5vw] font-bionix hover:bg-orange-600 text-[#FFFAF0] font-bold py-3 md:py-2 px-6"
             >
               Register
             </button>
@@ -235,7 +236,7 @@ function AvishkarEvent() {
             <h2 className="uppercase text-[3vw] font-bionix mb-4">
               Coordinators
             </h2>
-            <div className="flex justify-around font-bionix text-[2.5vw]">
+            <div className="flex justify-around font-bionix text-base md:text-[2.5vw]">
               {eventData?.eventCoordinators.map((coo, idx) => (
                 <div>{coo.name}</div>
               ))}

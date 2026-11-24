@@ -1,5 +1,4 @@
 // import bg
-import ElectromaniaPic from "../images/Main/ELECTROMANIA.webp";
 import ElectromaniaSubPic from "../images/Sub/Electromania.webp";
 
 const Electromania = {

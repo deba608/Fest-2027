@@ -89,8 +89,8 @@ const Schedule = () => {
 
       <div className="h-auto relative z-20 ">
         <div className=" h-full flex flex-col bg-scheduleOrange items-center justify-center  z-20  relative md:flex md:flex-col md:justify-center md:items-center">
-          <div className="hidden md:block z-10 absolute -bottom-[9rem] -left-[4.4rem] md:left-[-2.7rem] md:bottom-[-5.5rem] scale-[0.6] md:scale-75 custom1560:left-[0rem] custom1560:scale-100 custom1980:scale-[1.2] custom1980:left-[-4px]">
-            <img className="relative z-10 custom1980:bottom-28 custom1980:left-8" src={girlLeft} alt="Girl Left" />
+          <div className="hidden md:block z-10 absolute left-0 origin-left -bottom-[9rem] md:bottom-[-5.5rem] scale-[0.6] md:scale-75 custom1560:scale-100 custom1980:scale-[1.2]">
+            <img className="relative z-10 custom1980:bottom-28" src={girlLeft} alt="Girl Left" />
           </div>
           <div className="hidden md:block absolute z-10 -right-[4.2rem] -bottom-[9rem] md:right-[-2.7rem] md:bottom-[-5.5rem] scale-[0.6] custom1560:scale-100 custom1560:right-[0rem] md:scale-75 custom1980:scale-[1.2] custom1980:right-[-4px]">
             <img className="relative custom1980:bottom-28 custom1980:right-8" src={girlRight} alt="Girl Right" />
@@ -102,7 +102,12 @@ const Schedule = () => {
           <div className="py-10 px-4 mt-10 md:h-auto w-full md:w-[78%] mb-[10%] lg:min-h-[50vh] custom1110:min-h-[30vh] flex flex-col items-center">
             <div className="hidden md:flex md:flex-wrap gap-4 md:justify-center">
               <div className="flex flex-wrap gap-5 justify-center w-full">
-                {Object.values(scheduleData).map(({ day, date }) => (
+                {Object.values(scheduleData).slice(0, 2).map(({ day, date }) => (
+                  <ScheduleCard key={day} day={day} date={new Date(date).getDate()} />
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-5 justify-center w-full mt-8 md:mt-0">
+                {Object.values(scheduleData).slice(2).map(({ day, date }) => (
                   <ScheduleCard key={day} day={day} date={new Date(date).getDate()} />
                 ))}
               </div>
@@ -110,15 +115,20 @@ const Schedule = () => {
 
             <div className="relative -top-8 flex flex-wrap gap-3 justify-center md:hidden">
               <div className="flex flex-wrap justify-center gap-4 w-full">
-                {Object.values(scheduleData).map(({ day, date }) => (
+                {Object.values(scheduleData).slice(0, 2).map(({ day, date }) => (
+                  <ScheduleCard key={day} day={day} date={new Date(date).getDate()} />
+                ))}
+              </div>
+              <div className="flex flex-wrap justify-center gap-4 w-full mt-4">
+                {Object.values(scheduleData).slice(2).map(({ day, date }) => (
                   <ScheduleCard key={day} day={day} date={new Date(date).getDate()} />
                 ))}
               </div>
             </div>
           </div>
           <div className="h-[40vh] relative md:hidden w-full">
-            <div className=" z-10 absolute bottom-0 left-0 md:left-[-2.7rem] md:bottom-[-5.5rem] scale-[0.6] md:scale-75 custom1560:left-[0rem] custom1560:scale-100 custom1980:scale-[1.2] custom1980:left-[-4px]">
-              <img className="relative z-10 custom1980:bottom-28 custom1980:left-8" src={girlLeft} alt="Girl Left" />
+            <div className=" z-10 absolute bottom-0 left-0 origin-left md:bottom-[-5.5rem] scale-[0.6] md:scale-75 custom1560:scale-100 custom1980:scale-[1.2]">
+              <img className="relative z-10 custom1980:bottom-28" src={girlLeft} alt="Girl Left" />
             </div>
             <div className="absolute z-10 right-0 bottom-0 md:right-[-2.7rem] md:bottom-[-5.5rem] scale-[0.6] custom1560:scale-100 custom1560:right-[0rem] md:scale-75 custom1980:scale-[1.2] custom1980:right-[-4px]">
               <img className="relative custom1980:bottom-28 custom1980:right-8" src={girlRight} alt="Girl Right" />

@@ -24,7 +24,7 @@ const ScheduleCard = ({ day, date }) => {
           <p className="tracking-wide text-[0.6rem] md:text-[1rem] text-white">DAY {day}</p>
         </div>
         <h1 className={`mt-1 text-[32px] md:text-[55px] tracking-wide mb-1 md:leading-[3.8rem] ${textColor}`}>
-          NOV
+          MAR
         </h1>
         <h1 className={`mt-2 text-[32px] md:text-[55px] tracking-wide ${textColor}`}>
           {date}
